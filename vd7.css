@@ -1,0 +1,83 @@
+@media screen and (max-width: 767px) {
+    .header .menu {
+      margin-left: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      background-color: white;
+      border-left: 1px solid #f2f2f2;
+      min-width: 20rem;
+    }
+  ...other code later
+  }
+  .header .menu__list {
+    flex-direction: column;
+  }
+  .header .menu__item {
+    margin: 0;
+    width: 100%;
+  }
+  .header .menu__link {
+    display: block;
+    padding: 1.5rem;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .menu__close{
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+  ..code lúc nãy
+   .header .menu__close {
+     position: absolute;
+     right: 1rem;
+     top: 1rem;
+     z-index: 10;
+     cursor: pointer;
+     font-size: 1.4rem;
+     display: block;
+   }
+  }
+  .wrapper{overflow-x: hidden;}
+.menu__close{display:none;}
+@media screen and (max-width: 767px) {
+  .header .menu {
+    margin-left: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: white;
+    border-left: 1px solid #f2f2f2;
+    min-width: 20rem;
+    transition: transform 0.25s linear;
+    will-change: transform;
+    transform: translateX(100%);
+  }
+  .header .menu.is-open {
+    transform: translateX(0);
+  }
+  .header .menu__list {
+    flex-direction: column;
+  }
+  .header .menu__item {
+    margin: 0;
+    width: 100%;
+  }
+  .header .menu__link {
+    display: block;
+    padding: 1.5rem;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .header .menu__close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 1.4rem;
+    display: block;
+  }
+}
